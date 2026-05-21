@@ -1,6 +1,30 @@
 #Challenge 1
 #-------------
-#
+
+# 1. User Input : On demande le mot à l'utilisateur
+mot = input("Veuillez entrer un mot : ").strip()
+
+# On crée un dictionnaire vide pour accumuler nos résultats
+dictionnaire_indices = {}
+
+# 2. Creating the Dictionary
+# 'index' recevra le numéro (0, 1, 2...) et 'lettre' recevra le caractère ('d', 'o'...)
+for index, lettre in enumerate(mot):
+    
+    # On vérifie si la lettre est déjà une clé du dictionnaire
+    if lettre in dictionnaire_indices:
+        # Si elle existe déjà, on ajoute (append) le nouvel index à sa liste
+        dictionnaire_indices[lettre].append(index)
+    else:
+        # Si elle n'existe pas, on crée la clé avec une liste contenant le premier index
+        dictionnaire_indices[lettre] = [index]
+
+# 3. Expected Output : On affiche le dictionnaire final
+print(dictionnaire_indices)
+
+
+
+
 
 #Challenge 2
 #------------
