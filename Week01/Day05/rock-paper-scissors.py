@@ -17,7 +17,7 @@ def print_results(results):
     print(f"Losses : {results['loss']}")
     print(f"Draws  : {results['draw']}")
     print("===============================")
-    print("Thank you for playing! See you soon! 👋✨\n")
+    print("Thank you for playing! See you soon! \n")
 
 def main():
     scores = {"win": 0, "loss": 0, "draw": 0}
@@ -38,7 +38,7 @@ def main():
         elif menu_choice == "3":
             print_results(scores)
             break
-            
+    
         else:
             print("\n❌ Invalid choice! Please select 1, 2, or 3.\n")
 
