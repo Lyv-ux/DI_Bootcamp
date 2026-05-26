@@ -1,29 +1,29 @@
 #🌟 Exercise 1: Cats
 #Step 1: Create Cat Objects
-# class Cat():
-#     def __init__(self, age, name):
-#         self.age = age
-#         self.name = name
+class Cat():
+     def __init__(self, age, name):
+         self.age = age
+         self.name = name
 
-#     def __str__(self):
-#         return f"{self.name} {self.age}"
+     def __str__(self):
+         return f"{self.name} {self.age}"
 
-# instance_1 = Cat(2, "Jul")        
-# instance_2 = Cat(4,"Chatty")
-# instance_3 = Cat(1, "Amy")
+instance_1 = Cat(2, "Jul")        
+instance_2 = Cat(4,"Chatty")
+instance_3 = Cat(1, "Amy")
 
 # #print(instance_1, instance_2, instance_3)
 
-# #Step 2: Create a Function to Find the Oldest Cat and Step 3: Print the Oldest Cat’s Details
+#Step 2: Create a Function to Find the Oldest Cat and Step 3: Print the Oldest Cat’s Details
 
-# def find_oldest_cat(cats):
-#    oldest_cat = cats[0]
-#    for cat in cats:
-#        if cat.age > oldest_cat.age :
-#            oldest_cat = cat
-#    print(f"The oldest cat is {oldest_cat.name}, it is {oldest_cat.age} years old")
+def find_oldest_cat(cats):
+    oldest_cat = cats[0]
+    for cat in cats:
+        if cat.age > oldest_cat.age :
+            oldest_cat = cat
+    print(f"The oldest cat is {oldest_cat.name}, it is {oldest_cat.age} years old")
 
-#find_oldest_cat([instance_1, instance_2, instance_3])
+find_oldest_cat([instance_1, instance_2, instance_3])
 
 
 
