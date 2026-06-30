@@ -1,5 +1,4 @@
 from googletrans import Translator
-import cgi
 french_words = ["Bonjour", "Au revoir", "Bienvenue", "A bientôt"]
 
 translator = Translator()
