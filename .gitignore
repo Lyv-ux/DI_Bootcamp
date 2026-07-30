@@ -83,3 +83,5 @@ data/processed/
 build/
 dist/
 *.egg-info/
+
+Week02/Day01/Flower Color Images Dataset/
